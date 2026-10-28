@@ -1,0 +1,5 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Informe de Mantención Semanal</title><style>body{margin:0;background:#0b1a24;color:#cfe;font:16px system-ui;display:grid;place-items:center;height:100vh;text-align:center;padding:16px}</style></head><body><p id="m">Cargando…</p><script>
+var U="https://script.google.com/macros/s/AKfycbxHOvUETN_T-GVT8qDUEx_SjUd__NkiGdWnMpTtoqhBkQLBN4K9AFdIQhO5SGQ91wT-/exec?accion=app";
+function abrir(h){document.open();document.write(h);document.close()}
+fetch(U,{credentials:"omit",cache:"no-store"}).then(function(r){if(!r.ok)throw 0;return r.text()}).then(function(h){if(h.indexOf("<html")<0)throw 0;try{localStorage.setItem("appHtml",h)}catch(e){}abrir(h)}).catch(function(){var h=null;try{h=localStorage.getItem("appHtml")}catch(e){}if(h)abrir(h);else document.getElementById("m").textContent="Sin conexión. Conéctate a internet y vuelve a abrir."});
+</script></body></html>
